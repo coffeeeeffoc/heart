@@ -5,15 +5,16 @@
 <meta charset="utf-8" />
 <title>loveTimeline</title>
 <!-- 添加百度统计 -->
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/garden_dev.js"></script>
 <script type="text/javascript" src="js/functions_dev.js"></script>
 </head>
-<body style="background: url(img/lover.jpg) no-repeat center;background-size: cover;"><!--手机端显示平铺的问题-->
+<body style="background: url(img/lover.jpg) no-repeat center fixed;background-size: cover;"><!--手机端显示平铺的问题-->
 <!-- 代码 开始 -->
 <div id="mainDiv">
-		<div id="content" style="width: 1110px; height: 725px; margin-top: 57px; margin-left: 165px;">
+		<div id="content" class="col-md-12" style="width: 1110px; height: 725px; margin-top: 57px; margin-left: 165px;">
 			<div id="loveHeart">
 				<canvas id="garden" width="1000" height="725"></canvas>	
 			</div>
