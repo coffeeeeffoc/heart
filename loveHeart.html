@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>loveTimeline</title>
+<!-- 添加百度统计 -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden_dev.js"></script>
+<script type="text/javascript" src="js/functions_dev.js"></script>
+</head>
+<body style="background: url(img/lover.jpg);">
+<!-- 代码 开始 -->
+<div id="mainDiv">
+		<div id="content" style="width: 1110px; height: 725px; margin-top: 57px; margin-left: 165px;">
+			<div id="loveHeart">
+				<canvas id="garden" width="1000" height="725"></canvas>	
+			</div>
+		</div>
+		
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2 - 150;
+		var offsetX2 = $("#loveHeart").width() / 2 + 130;
+		var offsetY = $("#loveHeart").height() / 2 - 25;
+		var offsetY2 = $("#loveHeart").height() / 2 - 105;
+		setTimeout(function () {
+			startHeartAnimation();
+		}, 100);
+		setTimeout(function () {
+			startHeartAnimation2();
+		}, 100);
+		setTimeout(function () {
+			startLoveArrowAnimation();
+		}, 1500);
+	</script>
+</body>
+</html>
