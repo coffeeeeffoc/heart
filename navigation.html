@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>导航</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<style type="text/css">
+    #nav{margin: 0px 0px 0px 0px ;position: absolute;left: 0px;}
+    ul,li{margin: 0px auto;padding: 0;}
+    ul,li{list-style-type: none;cursor: pointer;color: white;line-height: 28px;text-align: center;}  
+    ul{width: 150px;}  
+    ul span{background-color: #8A2BE2;display: block;font-weight: bold;border-bottom: 1px solid #ccc;}  
+
+    li ul span{background-color: #1E90FF}
+
+    li{background-color: #6495ED;display: none;}  
+    li:hover{background-color: #4169E1;}  
+    b{display: inline;float: right;padding-right: 10px;}  
+
+    #accordion {
+       width: 500px;
+       margin: 100px 0px 0px 300px ; }
+    #accordion div {
+       float: left;
+       width:20%;
+       height: 400px;
+       overflow: hidden;}
+    #accordion:hover div {
+       width: 20px; }
+    #accordion:hover div:hover {
+       width: 420px;
+       overflow: auto; }
+
+    #java {
+       background-color: #90EE90; }
+    #javaScript {
+       background-color: #6959CD; }
+    #jQuery {
+       background-color: #E0FFFF; }
+    #CSS {
+       background-color: #EEEE00; }
+    #bootstrap {
+       background-color: #DDA0DD; }
+    h1 {
+       font-size: 150%;
+       margin: 10px 10px .2em 25px; }
+    p {
+       margin: 1em 25px; }
+
+</style>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <span>web前端<b>+</b></span>
+            <li>
+                <ul>
+                    <span>HTML<b>+</b></span>
+                    <li>XHTML</li>
+                    <li>HTML5</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <span>CSS<b>+</b></span>
+                    <li>CSS</li>
+                    <li>CSS3</li>
+                    <li>响应式设计</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <span>javascript<b>+</b></span>
+                    <li>javascript事件</li>
+                    <li>javascript函数</li>
+                    <li>HTML DOM</li>
+                    <li>js库</li>
+                    <li>javascript高级内容</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <span>jQuery<b>+</b></span>
+                    <li>jQuery效果</li>
+                    <li>jQuery HTML</li>
+                    <li>jQuery遍历</li>
+                    <li>jQuery Ajax</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <span>bootstrap<b>+</b></span>
+                    <li>bootstrap CSS</li>
+                    <li>bootstrap布局组件</li>
+                    <li>bootstrap插件</li>
+                    <li>其他</li>
+                </ul>   
+            </li>
+        </ul>
+    </div>
+
+    <div id="accordion">
+      <div id="java">
+         <h1>Java</h1>
+         <p>Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程。</p>
+         <p>Java具有简单性、面向对象、分布式、健壮性、安全性、平台独立与可移植性、多线程、动态性等特点  。Java可以编写桌面应用程序、Web应用程序、分布式系统和嵌入式系统应用程序等。</p>
+      </div>
+      <div id="javaScript">
+         <h1>javaScript</h1>
+         <p>JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。</p>
+      </div>
+      <div id="jQuery">
+         <h1>jQuery</h1>
+         <p>jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。</p>
+         <p>jQuery的核心特性可以总结为：具有独特的链式语法和短小清晰的多功能接口；具有高效灵活的css选择器，并且可对CSS选择器进行扩展；拥有便捷的插件扩展机制和丰富的插件。jQuery兼容各种主流浏览器，如IE 6.0+、FF 1.5+、Safari 2.0+、Opera 9.0+等。</p>
+      </div>
+      <div id="CSS">
+         <h1>CSS</h1>
+         <p>层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。</p>
+         <p>CSS 能够对网页中元素位置的排版进行像素级精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型样式编辑的能力。</p>
+      </div>
+        <div id="bootstrap">
+         <h1>bootstrap</h1>
+         <p>Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。</p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function(){  
+            $('span').click(function(){  
+                if($(this).siblings('li').hasClass('on')){  
+                    $(this).siblings('li').slideUp(500).removeClass('on');
+                    $(this).children('b').text('+');  
+                }else{  
+                    $(this).siblings('li').slideDown(500).addClass('on');
+                    $(this).children('b').text('-');  
+                }  
+            });  
+        });  
+    </script>
+</body>
+</html>

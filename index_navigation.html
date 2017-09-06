@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>navigation</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('li').mouseover(function(){$(this).addClass('active')});
+		$('li').mouseout(function(){$(this).removeClass('active')});
+	});
+	function search(){
+		window.open("cars.html");return false;
+	}
+	</script>
+	<style type="text/css">
+		#example-navbar-collapse{
+			display: inline-block;
+		}
+		.col_kx {
+		overflow: hidden; width: 800px; margin: 0px auto; 
+	};
+	</style>
+
+	
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid"> 
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#example-navbar-collapse">
+			<span class="sr-only">切换导航</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">汽车导航</a>
+	</div>
+	<form class="navbar-form navbar-left" role="search" onsubmit="search()">
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="搜索">
+		</div>
+	</form>
+	<div class="collapse navbar-collapse" id="example-navbar-collapse">
+		<ul class="nav nav-tabs">
+			<li><a href="#">热门车型</a></li>
+			<li><a href="#">评测</a></li>
+			<li><a href="#">二手车</a></li>
+			<li><a href="#">经销商</a></li>
+			<li><a href="#">报价</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					跑车 <b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">兰博基尼</a></li>
+					<li class="divider"></li>
+					<li><a href="#">保时捷</a></li>
+					<li class="divider"></li>
+					<li><a href="#">法拉利</a></li>
+					<li class="divider"></li>
+					<li><a href="#">玛莎拉蒂</a></li>
+					<li class="divider"></li>
+					<li><a href="#">布加迪</a></li>
+				</ul>
+			</li>
+		</ul>
+
+	</div>
+</nav>
+
+<!--显示图片-->
+<div id="header_demo" class="col_kx">
+<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td id="header_demo1" nowrap>
+			<a href="javascript:;"><img src="img/car1.jpg" width="200px" height="auto"></a><a href="javascript:;"><img src="img/car2.jpg" width="200px" height="auto"></a><a href="javascript:;"><img src="img/car3.jpg" width="200px" height="auto"></a><a href="javascript:;"><img src="img/car4.jpg" width="200px" height="auto"></a><a href="javascript:;"><img src="img/car5.jpg" width="200px" height="auto"></a><a href="javascript:;"><img src="img/car6.jpg" width="200px" height="auto"></a>
+		</td>
+		<td id="header_demo2" nowrap>123</td>
+    </tr>
+</table>
+</div>
+<script>
+var header_demo = document.getElementById("header_demo");
+var header_demo1 = document.getElementById("header_demo1");
+var header_demo2 = document.getElementById("header_demo2");
+var speed=10;    //数值越大滚动速度越慢
+header_demo2.innerHTML = header_demo1.innerHTML;
+function Marquee(){
+    if(header_demo2.offsetWidth-header_demo.scrollLeft<=0)
+        header_demo.scrollLeft-=header_demo1.offsetWidth
+    else{
+        header_demo.scrollLeft+=1;
+    }
+}
+var MyMar = setInterval(Marquee,speed);
+header_demo.onmouseover = function(){clearInterval(MyMar)}
+header_demo.onmouseout = function(){MyMar = setInterval(Marquee,speed)}
+</script>
+
+</body>
+</html>
